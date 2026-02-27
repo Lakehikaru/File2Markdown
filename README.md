@@ -2,6 +2,23 @@
 
 一个 Claude Code Skill，通过 [markdown.new](https://markdown.new) API 将文件转换为 Markdown。支持 PDF、DOCX、XLSX、图片等 20+ 种格式，自动拆分超过 10MB 的大文件。
 
+## 快速上手
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/Lakehikaru/File2Markdown.git
+cd File2Markdown
+
+# 2. 安装依赖
+pip install requests pypdfium2 openpyxl
+
+# 3. 直接使用（无需 API key）
+python .claude/scripts/file2md.py your_file.pdf
+
+# 或在 Claude Code 中打开此目录，直接说：
+# "把 report.pdf 转成 markdown"
+```
+
 ## 功能特性
 
 - 调用 markdown.new 免费 API，无需注册，每天 500 次
@@ -23,8 +40,8 @@ pip install requests pypdfium2 openpyxl
 **方式 A：克隆仓库（推荐团队使用）**
 
 ```bash
-git clone <repo-url>
-cd file-to-markdown
+git clone https://github.com/Lakehikaru/File2Markdown.git
+cd File2Markdown
 # Claude Code 会自动识别 .claude/skills/ 下的 skill
 ```
 
